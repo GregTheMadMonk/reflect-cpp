@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_IS_SET_LIKE_HPP_
 #define RFL_PARSING_IS_SET_LIKE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <set>
 #include <type_traits>
 #include <unordered_set>
+#endif
 
 namespace rfl {
 namespace parsing {

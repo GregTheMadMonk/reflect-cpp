@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_VECTORPARSER_HPP_
 #define RFL_PARSING_VECTORPARSER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <iterator>
 #include <map>
 #include <stdexcept>
 #include <string>
 #include <type_traits>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

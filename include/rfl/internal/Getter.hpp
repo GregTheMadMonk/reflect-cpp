@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_GETTER_HPP_
 #define RFL_INTERNAL_GETTER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <variant>
+#endif
 
 #include "StringLiteral.hpp"
 #include "find_index.hpp"

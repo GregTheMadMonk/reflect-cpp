@@ -1,8 +1,12 @@
+
 #ifndef RFL_MSGPACK_READER_HPP_
 #define RFL_MSGPACK_READER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <msgpack.h>
+#endif
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <concepts>
 #include <exception>
@@ -16,6 +20,7 @@
 #include <type_traits>
 #include <unordered_map>
 #include <vector>
+#endif
 
 #include "../Box.hpp"
 #include "../Result.hpp"

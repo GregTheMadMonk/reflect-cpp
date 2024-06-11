@@ -1,9 +1,12 @@
+
 #ifndef RFL_TOML_SAVE_HPP_
 #define RFL_TOML_SAVE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <fstream>
 #include <iostream>
 #include <string>
+#endif
 
 #include "../Result.hpp"
 #include "../io/save_string.hpp"

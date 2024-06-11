@@ -1,9 +1,12 @@
+
 #ifndef RFL_REMOVEFIELDS_HPP_
 #define RFL_REMOVEFIELDS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "internal/StringLiteral.hpp"
 #include "internal/remove_fields.hpp"

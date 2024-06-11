@@ -1,7 +1,10 @@
+
 #ifndef RFL_FROM_NAMED_TUPLE_HPP_
 #define RFL_FROM_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "internal/copy_from_named_tuple.hpp"
 #include "internal/copy_from_tuple.hpp"

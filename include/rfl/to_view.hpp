@@ -1,9 +1,12 @@
+
 #ifndef RFL_TO_VIEW_HPP_
 #define RFL_TO_VIEW_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <iostream>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "internal/to_ptr_named_tuple.hpp"
 

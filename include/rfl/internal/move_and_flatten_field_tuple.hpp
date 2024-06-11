@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_MOVE_AND_FLATTEN_FIELD_TUPLE_HPP_
 #define RFL_INTERNAL_MOVE_AND_FLATTEN_FIELD_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
+#endif
 
 #include "is_flatten_field.hpp"
 #include "move_to_field_tuple.hpp"

@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_EXTRACTDISTRIMINATORS_HPP_
 #define RFL_INTERNAL_EXTRACTDISTRIMINATORS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../TaggedUnion.hpp"
 #include "../define_literal.hpp"

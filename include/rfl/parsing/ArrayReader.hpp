@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_ARRAYREADER_HPP_
 #define RFL_PARSING_ARRAYREADER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <optional>
 #include <string_view>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../internal/is_array.hpp"

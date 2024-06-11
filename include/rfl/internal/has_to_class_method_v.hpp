@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_HASTOCLASSMETHODV_HPP_
 #define RFL_INTERNAL_HASTOCLASSMETHODV_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 namespace rfl {
 namespace internal {

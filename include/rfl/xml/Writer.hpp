@@ -1,6 +1,8 @@
+
 #ifndef RFL_XML_WRITER_HPP_
 #define RFL_XML_WRITER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <pugixml.hpp>
@@ -10,6 +12,7 @@
 #include <string_view>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Ref.hpp"
 #include "../Result.hpp"

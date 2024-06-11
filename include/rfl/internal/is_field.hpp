@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_ISFIELD_HPP_
 #define RFL_INTERNAL_ISFIELD_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../Field.hpp"
 #include "StringLiteral.hpp"

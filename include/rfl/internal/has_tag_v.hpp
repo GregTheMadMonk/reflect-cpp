@@ -1,8 +1,11 @@
+
 #ifndef RFL_HASTAGV_HPP_
 #define RFL_HASTAGV_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <utility>
+#endif
 
 namespace rfl {
 namespace internal {

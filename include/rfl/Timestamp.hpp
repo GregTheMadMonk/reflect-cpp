@@ -1,6 +1,8 @@
+
 #ifndef RFL_TIMESTAMP_HPP_
 #define RFL_TIMESTAMP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <ctime>
 #include <iomanip>
 #include <iostream>
@@ -9,6 +11,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
+#endif
 
 #include "Result.hpp"
 #include "internal/StringLiteral.hpp"

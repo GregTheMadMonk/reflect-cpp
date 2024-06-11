@@ -1,6 +1,8 @@
+
 #ifndef RFL_INTERNAL_GETFIELDNAMES_HPP_
 #define RFL_INTERNAL_GETFIELDNAMES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <iostream>
 #include <memory>
@@ -9,6 +11,7 @@
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../Literal.hpp"
 #include "bind_fake_object_to_tuple.hpp"

@@ -1,3 +1,4 @@
+
 /*
                                  Apache License
                            Version 2.0, January 2004
@@ -233,11 +234,13 @@ Software.
 #ifndef CTLL__FIXED_STRING__GPP
 #define CTLL__FIXED_STRING__GPP
 
+#ifndef REFLECTCPP_MODULE
 #include <utility>
 #include <cstddef>
 #include <string_view>
 #include <array>
 #include <cstdint>
+#endif
 
 namespace ctll {
 
@@ -461,7 +464,9 @@ template <size_t N> fixed_string(fixed_string<N>) -> fixed_string<N>;
 #ifndef CTLL__UTILITIES__HPP
 #define CTLL__UTILITIES__HPP
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #if defined __cpp_nontype_template_parameter_class
     #define CTLL_CNTTP_COMPILER_CHECK 1
@@ -662,7 +667,7 @@ struct anything {
 template <auto A, decltype(A) B> struct range {
 	constexpr inline range() noexcept { }
 	//template <auto V> constexpr range(term<V>) noexcept requires (A <= V) && (V <= B);
-	template <auto V, typename = std::enable_if_t<(A <= V) && (V <= B)>> constexpr inline range(term<V>) noexcept;
+	template <auto V, typename = std::enable_if_t<(A <= V) && (V <= B)>> constexpr range(term<V>) noexcept;
 };
 
 #ifdef __EDG__
@@ -677,7 +682,7 @@ template <auto... Def> struct set {
 	#ifdef __EDG__
 	template <auto V, typename = std::enable_if_t<contains<V, Def...>::value>> constexpr inline set(term<V>) noexcept;
 	#else
-	template <auto V, typename = std::enable_if_t<((Def == V) || ... || false)>> constexpr inline set(term<V>) noexcept;
+	template <auto V, typename = std::enable_if_t<((Def == V) || ... || false)>> constexpr set(term<V>) noexcept;
 	#endif
 };
 
@@ -688,7 +693,7 @@ template <auto... Def> struct neg_set {
 	#ifdef __EDG__
 	template <auto V, typename = std::enable_if_t<!contains<V, Def...>::value>> constexpr inline neg_set(term<V>) noexcept;
 	#else
-	template <auto V, typename = std::enable_if_t<!((Def == V) || ... || false)>> constexpr inline neg_set(term<V>) noexcept;
+	template <auto V, typename = std::enable_if_t<!((Def == V) || ... || false)>> constexpr neg_set(term<V>) noexcept;
 	#endif
 };
 
@@ -750,7 +755,9 @@ namespace ctll {
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <limits>
+#endif
 
 namespace ctll {
 
@@ -1528,7 +1535,9 @@ constexpr CTRE_FORCE_INLINE bool is_case_insensitive(flags f) {
 } // namespace ctre
 
 #endif
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
+#endif
 
 namespace ctre {
 	
@@ -1659,7 +1668,9 @@ using ascii_chars = char_range<'\x00','\x7F'>;
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
+#endif
 
 namespace ctre {
 	
@@ -1741,7 +1752,9 @@ template <typename> struct mode_switch { };
 #ifndef H_COR3NTIN_UNICODE_SYNOPSYS
 #define H_COR3NTIN_UNICODE_SYNOPSYS
 
+#ifndef REFLECTCPP_MODULE
 #include <string_view>
+#endif
 
 namespace uni
 {
@@ -2082,7 +2095,9 @@ static auto rotate(assert_line_end) -> assert_line_end;
 #ifndef CTRE__ID__HPP
 #define CTRE__ID__HPP
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 namespace ctre {
 	
@@ -2102,8 +2117,10 @@ template <auto... Name> struct id {
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <limits>
+#endif
 
 namespace ctre {
 	
@@ -3043,8 +3060,10 @@ constexpr bool starts_with_anchor(const flags & f, ctll::list<capture_with_name<
 
 #if __cpp_char8_t >= 201811
 
+#ifndef REFLECTCPP_MODULE
 #include <string_view>
 #include <iterator>
+#endif
 
 #if __cpp_lib_char8_t >= 201811L
 #define CTRE_ENABLE_UTF8_RANGE
@@ -3288,6 +3307,7 @@ struct utf8_range {
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
 #include <tuple>
 #include <string_view>
@@ -3299,6 +3319,7 @@ struct utf8_range {
 #include <iosfwd>
 #if __has_include(<charconv>)
 #include <charconv>
+#endif
 #endif
 
 namespace ctre {
@@ -3474,7 +3495,7 @@ template <size_t Id, typename Name = void> struct captured_content {
 
 struct capture_not_exists_tag { };
 
-static constexpr inline auto capture_not_exists = capture_not_exists_tag{};
+STATIC constexpr inline auto capture_not_exists = capture_not_exists_tag{};
 
 template <typename... Captures> struct captures;
 
@@ -4382,7 +4403,9 @@ template <typename... A, typename... B> constexpr bool collides(ctll::list<A...>
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <iterator>
+#endif
 
 // remove me when MSVC fix the constexpr bug
 #ifdef _MSC_VER
@@ -4943,7 +4966,9 @@ constexpr CTRE_FORCE_INLINE R evaluate(const BeginIterator begin, Iterator curre
 #ifndef CTRE_V2__CTRE__ITERATOR__HPP
 #define CTRE_V2__CTRE__ITERATOR__HPP
 
+#ifndef REFLECTCPP_MODULE
 #include <cstddef>
+#endif
 
 namespace ctre {
 
@@ -5275,7 +5300,9 @@ namespace std::ranges {
 
 #endif
 
+#ifndef REFLECTCPP_MODULE
 #include <string_view>
+#endif
 
 namespace ctre {
 
@@ -5572,39 +5599,39 @@ template <CTRE_REGEX_TEMPLATE_COPY_TYPE input> struct regex_builder {
 
 // case-sensitive
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto match = regular_expression<typename regex_builder<input>::type, match_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto match = regular_expression<typename regex_builder<input>::type, match_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto search = regular_expression<typename regex_builder<input>::type, search_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto search = regular_expression<typename regex_builder<input>::type, search_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto starts_with = regular_expression<typename regex_builder<input>::type, starts_with_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto starts_with = regular_expression<typename regex_builder<input>::type, starts_with_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto range = regular_expression<typename regex_builder<input>::type, range_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto range = regular_expression<typename regex_builder<input>::type, range_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto split = regular_expression<typename regex_builder<input>::type, split_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto split = regular_expression<typename regex_builder<input>::type, split_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto tokenize = regular_expression<typename regex_builder<input>::type, tokenize_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto tokenize = regular_expression<typename regex_builder<input>::type, tokenize_method, ctll::list<singleline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto iterator = regular_expression<typename regex_builder<input>::type, iterator_method, ctll::list<singleline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto iterator = regular_expression<typename regex_builder<input>::type, iterator_method, ctll::list<singleline, Modifiers...>>();
 
-static constexpr inline auto sentinel = regex_end_iterator();
+STATIC constexpr inline auto sentinel = regex_end_iterator();
 
 // multiline
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_match = regular_expression<typename regex_builder<input>::type, match_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_match = regular_expression<typename regex_builder<input>::type, match_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_search = regular_expression<typename regex_builder<input>::type, search_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_search = regular_expression<typename regex_builder<input>::type, search_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_starts_with = regular_expression<typename regex_builder<input>::type, starts_with_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_starts_with = regular_expression<typename regex_builder<input>::type, starts_with_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_range = regular_expression<typename regex_builder<input>::type, range_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_range = regular_expression<typename regex_builder<input>::type, range_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_split = regular_expression<typename regex_builder<input>::type, split_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_split = regular_expression<typename regex_builder<input>::type, split_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_tokenize = regular_expression<typename regex_builder<input>::type, tokenize_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_tokenize = regular_expression<typename regex_builder<input>::type, tokenize_method, ctll::list<multiline, Modifiers...>>();
 
-template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> static constexpr inline auto multiline_iterator = regular_expression<typename regex_builder<input>::type, iterator_method, ctll::list<multiline, Modifiers...>>();
+template <CTRE_REGEX_INPUT_TYPE input, typename... Modifiers> STATIC constexpr inline auto multiline_iterator = regular_expression<typename regex_builder<input>::type, iterator_method, ctll::list<multiline, Modifiers...>>();
 
-static constexpr inline auto multiline_sentinel = regex_end_iterator();
+STATIC constexpr inline auto multiline_sentinel = regex_end_iterator();
 
 }
 

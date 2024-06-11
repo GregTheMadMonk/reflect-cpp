@@ -1,6 +1,8 @@
+
 #ifndef RFL_TOML_READER_HPP_
 #define RFL_TOML_READER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <exception>
 #include <map>
@@ -9,6 +11,7 @@
 #include <stdexcept>
 #include <string>
 #include <string_view>
+#endif
 #include <toml++/toml.hpp>
 #include <type_traits>
 #include <unordered_map>

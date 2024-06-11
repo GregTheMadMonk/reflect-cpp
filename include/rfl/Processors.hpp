@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_PROCESSORS_HPP_
 #define RFL_INTERNAL_PROCESSORS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "internal/is_no_optionals_v.hpp"
 

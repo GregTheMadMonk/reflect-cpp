@@ -1,11 +1,14 @@
+
 #ifndef RFL_XML_PARSER_HPP_
 #define RFL_XML_PARSER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
 
 #include "../internal/is_attribute.hpp"
 #include "../parsing/NamedTupleParser.hpp"
 #include "../parsing/Parser.hpp"
+#endif
 #include "Reader.hpp"
 #include "Writer.hpp"
 

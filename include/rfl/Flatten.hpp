@@ -1,11 +1,14 @@
+
 #ifndef RFL_FLATTEN_HPP_
 #define RFL_FLATTEN_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <string_view>
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 namespace rfl {
 

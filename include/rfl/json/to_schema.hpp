@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_TOSCHEMA_HPP_
 #define RFL_JSON_TOSCHEMA_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <yyjson.h>
 #else
@@ -17,6 +19,7 @@
 #include "../parsing/schema/Type.hpp"
 #include "../parsing/schema/ValidationType.hpp"
 #include "../parsing/schema/make.hpp"
+#endif
 #include "Reader.hpp"
 #include "Writer.hpp"
 #include "schema/JSONSchema.hpp"

@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_MAPREADER_HPP_
 #define RFL_PARSING_MAPREADER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
 #include <string_view>
 #include <type_traits>
 #include <utility>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

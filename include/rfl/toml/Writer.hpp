@@ -1,12 +1,15 @@
+
 #ifndef RFL_TOML_WRITER_HPP_
 #define RFL_TOML_WRITER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <sstream>
 #include <stdexcept>
 #include <string>
 #include <string_view>
+#endif
 #include <toml++/toml.hpp>
 #include <type_traits>
 #include <vector>

@@ -1,12 +1,15 @@
+
 #ifndef FLEXBUF_WRITE_HPP_
 #define FLEXBUF_WRITE_HPP_
 
 #include <flatbuffers/flexbuffers.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <cstddef>
 #include <ostream>
 #include <sstream>
 #include <vector>
+#endif
 
 #include "../Processors.hpp"
 #include "../Ref.hpp"

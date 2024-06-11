@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_PARSER_RFL_VARIANT_HPP_
 #define RFL_PARSING_PARSER_RFL_VARIANT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
 #include <variant>
+#endif
 
 #include "../Result.hpp"
 #include "../Variant.hpp"

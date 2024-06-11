@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_WRITE_HPP_
 #define RFL_JSON_WRITE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <yyjson.h>
 #else
@@ -13,6 +15,7 @@
 
 #include "../Processors.hpp"
 #include "../parsing/Parent.hpp"
+#endif
 #include "Parser.hpp"
 
 namespace rfl {

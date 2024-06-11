@@ -1,6 +1,8 @@
+
 #ifndef RFL_PARSING_ISREADER_HPP_
 #define RFL_PARSING_ISREADER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <concepts>
 #include <cstdint>
@@ -8,6 +10,7 @@
 #include <optional>
 #include <string>
 #include <string_view>
+#endif
 
 #include "../Result.hpp"
 #include "../internal/is_basic_type.hpp"

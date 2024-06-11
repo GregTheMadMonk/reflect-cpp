@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_READ_HPP_
 #define RFL_JSON_READ_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <yyjson.h>
 #else
@@ -12,6 +14,7 @@
 
 #include "../Processors.hpp"
 #include "../internal/wrap_in_rfl_array_t.hpp"
+#endif
 #include "Parser.hpp"
 #include "Reader.hpp"
 

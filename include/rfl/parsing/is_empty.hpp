@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_IS_EMPTY_HPP_
 #define RFL_PARSING_IS_EMPTY_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../internal/has_reflection_method_v.hpp"
 #include "../internal/has_reflection_type_v.hpp"
@@ -14,7 +17,7 @@ namespace rfl {
 namespace parsing {
 
 template <class T>
-static const bool is_empty(const T& _var) {
+STATIC const bool is_empty(const T& _var) {
   using Type = std::remove_cvref_t<T>;
   if constexpr (std::is_pointer_v<Type>) {
     return !_var || is_empty(*_var);

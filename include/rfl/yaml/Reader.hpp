@@ -1,8 +1,10 @@
+
 #ifndef RFL_YAML_READER_HPP_
 #define RFL_YAML_READER_HPP_
 
 #include <yaml-cpp/yaml.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <exception>
 #include <map>
@@ -14,6 +16,7 @@
 #include <type_traits>
 #include <unordered_map>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

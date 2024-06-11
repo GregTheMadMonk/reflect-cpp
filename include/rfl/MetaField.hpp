@@ -1,7 +1,10 @@
+
 #ifndef RFL_METAFIELD_HPP_
 #define RFL_METAFIELD_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
+#endif
 
 namespace rfl {
 

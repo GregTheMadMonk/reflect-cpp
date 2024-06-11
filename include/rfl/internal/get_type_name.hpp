@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_GETTYPENAME_HPP_
 #define RFL_INTERNAL_GETTYPENAME_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <source_location>
 #include <string>
 #include <utility>
+#endif
 
 namespace rfl {
 namespace internal {

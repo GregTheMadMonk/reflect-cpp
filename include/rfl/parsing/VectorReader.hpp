@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_VECTORREADER_HPP_
 #define RFL_PARSING_VECTORREADER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../Result.hpp"
 #include "is_map_like.hpp"

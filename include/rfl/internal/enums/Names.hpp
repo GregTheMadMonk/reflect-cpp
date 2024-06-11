@@ -1,12 +1,15 @@
+
 #ifndef RFL_INTERNAL_ENUMS_NAMES_HPP_
 #define RFL_INTERNAL_ENUMS_NAMES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <array>
 #include <string>
 #include <string_view>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../../Literal.hpp"
 #include "../../define_literal.hpp"

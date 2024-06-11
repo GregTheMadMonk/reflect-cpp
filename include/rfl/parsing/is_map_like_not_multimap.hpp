@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_IS_MAP_LIKE_NOT_MULTIMAP_HPP_
 #define RFL_PARSING_IS_MAP_LIKE_NOT_MULTIMAP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
 #include <unordered_map>
+#endif
 
 namespace rfl {
 namespace parsing {

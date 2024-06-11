@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_SCHEMA_TYPE_HPP_
 #define RFL_PARSING_SCHEMA_TYPE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cstddef>
 #include <map>
 #include <string>
 #include <variant>
 #include <vector>
+#endif
 
 #include "../../Ref.hpp"
 #include "ValidationType.hpp"

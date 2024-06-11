@@ -1,7 +1,10 @@
+
 #ifndef RFL_PATTERNVALIDATOR_HPP_
 #define RFL_PATTERNVALIDATOR_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
+#endif
 
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <ctre.hpp>

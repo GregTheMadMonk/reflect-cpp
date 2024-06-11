@@ -1,6 +1,8 @@
+
 #ifndef RFL_XML_READER_HPP_
 #define RFL_XML_READER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <exception>
 #include <map>
@@ -15,6 +17,7 @@
 #include <unordered_map>
 #include <variant>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

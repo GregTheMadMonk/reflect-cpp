@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_REMOVE_PTRS_TUP_HPP_
 #define RFL_INTERNAL_REMOVE_PTRS_TUP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "ptr_tuple_t.hpp"
 #include "../to_named_tuple.hpp"

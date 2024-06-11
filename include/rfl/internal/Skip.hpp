@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_SKIP_HPP_
 #define RFL_INTERNAL_SKIP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <optional>
+#endif
 
 namespace rfl::internal {
 

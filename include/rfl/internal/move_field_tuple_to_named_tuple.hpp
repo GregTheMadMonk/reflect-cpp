@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_MOVE_FIELD_TUPLE_TO_NAMED_TUPLE_HPP_
 #define RFL_INTERNAL_MOVE_FIELD_TUPLE_TO_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "../Field.hpp"
 #include "has_flatten_fields.hpp"

@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_ENUMS_GET_ENUM_NAMES_HPP_
 #define RFL_INTERNAL_ENUMS_GET_ENUM_NAMES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <limits>
 #include <source_location>
 #include <type_traits>
+#endif
 
 #include "../../Literal.hpp"
 #include "../../define_literal.hpp"

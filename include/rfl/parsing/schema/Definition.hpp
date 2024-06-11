@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_SCHEMA_DEFINITION_HPP_
 #define RFL_PARSING_SCHEMA_DEFINITION_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <string>
+#endif
 
 #include "Type.hpp"
 

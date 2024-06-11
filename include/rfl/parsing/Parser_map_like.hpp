@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_PARSER_MAP_LIKE_HPP_
 #define RFL_PARSING_PARSER_MAP_LIKE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <stdexcept>
 #include <string>
 #include <type_traits>
 #include <unordered_map>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_NO_DUPLICATE_FIELD_NAMES_HPP_
 #define RFL_INTERNAL_NO_DUPLICATE_FIELD_NAMES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
+#endif
 
 namespace rfl {
 namespace internal {

@@ -1,10 +1,13 @@
+
 #ifndef RFL_IO_SAVE_BYTES_HPP_
 #define RFL_IO_SAVE_BYTES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 

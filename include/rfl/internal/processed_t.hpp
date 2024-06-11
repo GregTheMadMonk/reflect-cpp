@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_PROCESSED_T_HPP_
 #define RFL_INTERNAL_PROCESSED_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../Processors.hpp"
 #include "../named_tuple_t.hpp"

@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_IS_NAMED_TUPLE_HPP_
 #define RFL_INTERNAL_IS_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../NamedTuple.hpp"
 

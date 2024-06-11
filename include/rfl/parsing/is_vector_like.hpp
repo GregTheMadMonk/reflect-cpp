@@ -1,6 +1,8 @@
+
 #ifndef RFL_PARSING_IS_VECTOR_LIKE_HPP_
 #define RFL_PARSING_IS_VECTOR_LIKE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <deque>
 #include <forward_list>
 #include <list>
@@ -9,6 +11,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#endif
 
 namespace rfl {
 namespace parsing {

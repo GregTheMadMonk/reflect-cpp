@@ -1,8 +1,10 @@
+
 #ifndef RFL_YAML_WRITER_HPP_
 #define RFL_YAML_WRITER_HPP_
 
 #include <yaml-cpp/yaml.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <sstream>
@@ -11,6 +13,7 @@
 #include <string_view>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Ref.hpp"
 #include "../Result.hpp"

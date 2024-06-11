@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.23)
 
-option(REFLECTCPP_BUILD_SHARED "Build shared library" ${BUILD_SHARED_LIBS})
+option(REFLECTCPP_BUILD_SHARED "Build shared library"       ${BUILD_SHARED_LIBS})
+option(REFLECTCPP_BUILD_MODULE "Use as a C++20 module"      OFF)
+option(REFLECTCPP_USE_IMPORT_STD "Use C++23's `import std`" OFF)
 
 option(REFLECTCPP_BSON "Enable BSON support" OFF)
 option(REFLECTCPP_CBOR "Enable CBOR support" OFF)
@@ -29,7 +31,17 @@ endif ()
 
 project(reflectcpp)
 
-set(CMAKE_CXX_STANDARD 20)
+if (NOT REFLECTCPP_BUILD_MODULE)
+    message(WARNING "REFLECTCPP_USE_IMPORT_STD is ignored without REFLECTCPP_BUILD_MODULE=ON")
+    set(REFLECTCPP_USE_IMPORT_STD OFF)
+endif ()
+
+if(REFLECTCPP_USE_IMPORT_STD)
+    message(STATUS "REFLECTCPP_USE_IMPORT_STD automoatically bumps project C++ standard to 23")
+    set(CMAKE_CXX_STANDARD 23)
+else ()
+    set(CMAKE_CXX_STANDARD 20)
+endif ()
 
 if(REFLECTCPP_USE_BUNDLED_DEPENDENCIES)
     if (REFLECTCPP_BUILD_SHARED)
@@ -46,7 +58,27 @@ else()
 endif()
 
 set_target_properties(reflectcpp PROPERTIES LINKER_LANGUAGE CXX)
-target_compile_features(reflectcpp PUBLIC cxx_std_20)
+if (REFLECTCPP_USE_IMPORT_STD)
+    target_compile_features(reflectcpp PUBLIC cxx_std_23)
+else ()
+    target_compile_features(reflectcpp PUBLIC cxx_std_20)
+endif ()
+
+if (REFLECTCPP_BUILD_MODULE)
+    if (REFLECTCPP_USE_IMPORT_STD)
+        target_compile_definitions(reflectcpp PRIVATE REFLECTCPP_STD_MODULE)
+    endif ()
+    set_source_files_properties(
+        src/rfl.xx src/rfl-json.xx
+        PROPERTIES LANGUAGE CXX
+    )
+    target_sources(
+        reflectcpp PUBLIC
+        FILE_SET reflectcpp_modules
+        TYPE CXX_MODULES
+        FILES src/rfl.xx src/rfl-json.xx
+    )
+endif ()
 
 if(REFLECTCPP_USE_BUNDLED_DEPENDENCIES)
     target_include_directories(reflectcpp PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:include> $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/rfl/thirdparty>)
@@ -143,14 +175,17 @@ target_sources(reflectcpp
     BASE_DIRS $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>
     FILES ${RFL_HEADERS})
    
-install(
-    TARGETS reflectcpp
-    EXPORT reflectcpp-exports
-    FILE_SET reflectcpp_headers DESTINATION ${INCLUDE_INSTALL_DIR}
+if (NOT REFLECTCPP_BUILD_MODULE)
+    # I have no idea where to install modules or how to install them
+    install(
+        TARGETS reflectcpp
+        EXPORT reflectcpp-exports
+        FILE_SET reflectcpp_headers DESTINATION ${INCLUDE_INSTALL_DIR}
+        )
+
+    install(
+        EXPORT reflectcpp-exports
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/reflectcpp
+        NAMESPACE reflectcpp::
     )
-    
-install(
-    EXPORT reflectcpp-exports
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/reflectcpp
-    NAMESPACE reflectcpp::
-)
+endif ()

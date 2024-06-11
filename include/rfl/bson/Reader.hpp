@@ -1,8 +1,10 @@
+
 #ifndef RFL_BSON_READER_HPP_
 #define RFL_BSON_READER_HPP_
 
 #include <bson/bson.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <concepts>
 #include <exception>
@@ -16,6 +18,7 @@
 #include <type_traits>
 #include <unordered_map>
 #include <vector>
+#endif
 
 #include "../Box.hpp"
 #include "../Result.hpp"

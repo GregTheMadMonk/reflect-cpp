@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_ENUMS_IS_FLAG_ENUM_HPP_
 #define RFL_INTERNAL_ENUMS_IS_FLAG_ENUM_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <concepts>
+#endif
 
 #include "is_scoped_enum.hpp"
 

@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_ARRAY_HPP_
 #define RFL_INTERNAL_ARRAY_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <cstddef>
 #include <type_traits>
+#endif
 
 #include "to_std_array.hpp"
 

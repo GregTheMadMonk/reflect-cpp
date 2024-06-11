@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_SCHEMA_TYPE_HPP_
 #define RFL_JSON_SCHEMA_TYPE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <memory>
 #include <optional>
@@ -9,6 +11,7 @@
 
 #include "../../Literal.hpp"
 #include "../../Rename.hpp"
+#endif
 
 namespace rfl::json::schema {
 

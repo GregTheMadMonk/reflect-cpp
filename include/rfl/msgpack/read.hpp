@@ -1,10 +1,15 @@
+
 #ifndef RFL_MSGPACK_READ_HPP_
 #define RFL_MSGPACK_READ_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <msgpack.h>
+#endif
 
+#ifndef REFLECTCPP_MODULE
 #include <istream>
 #include <string>
+#endif
 
 #include "../Processors.hpp"
 #include "../internal/wrap_in_rfl_array_t.hpp"

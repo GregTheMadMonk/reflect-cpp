@@ -1,8 +1,11 @@
+
 #ifndef RFL_FIND_INDEX_HPP_
 #define RFL_FIND_INDEX_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "StringLiteral.hpp"
 
@@ -11,7 +14,7 @@ namespace internal {
 
 /// Finds the index of the field signified by _field_name
 template <StringLiteral _field_name, class Fields, int I = 0>
-constexpr static int find_index() {
+constexpr STATIC int find_index() {
   using FieldType =
       std::remove_cvref_t<typename std::tuple_element<I, Fields>::type>;
 

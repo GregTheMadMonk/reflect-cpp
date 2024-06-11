@@ -1,7 +1,10 @@
+
 #ifndef RFL_ALLOF_HPP_
 #define RFL_ALLOF_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <vector>
+#endif
 
 #include "Result.hpp"
 #include "parsing/schema/ValidationType.hpp"

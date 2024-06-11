@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_PTR_TUPLE_T_HPP_
 #define RFL_INTERNAL_PTR_TUPLE_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <type_traits>
+#endif
 
 #include "to_ptr_tuple.hpp"
 

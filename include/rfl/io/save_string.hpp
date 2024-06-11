@@ -1,11 +1,14 @@
+
 #ifndef RFL_IO_SAVE_STRING_HPP_
 #define RFL_IO_SAVE_STRING_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <fstream>
 #include <iostream>
 #include <string>
 
 #include "../Result.hpp"
+#endif
 
 namespace rfl {
 namespace io {

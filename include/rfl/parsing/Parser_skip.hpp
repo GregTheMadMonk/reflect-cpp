@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_PARSER_SKIP_HPP_
 #define RFL_PARSING_PARSER_SKIP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

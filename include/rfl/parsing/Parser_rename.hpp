@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_PARSER_RENAME_HPP_
 #define RFL_PARSING_PARSER_RENAME_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
+#endif
 
 #include "../Rename.hpp"
 #include "../Result.hpp"

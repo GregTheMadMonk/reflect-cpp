@@ -1,13 +1,18 @@
+
 #ifndef RFL_CBOR_WRITE_HPP_
 #define RFL_CBOR_WRITE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cbor.h>
+#endif
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <ostream>
 #include <sstream>
 #include <string>
 #include <utility>
+#endif
 
 #include "../parsing/Parent.hpp"
 #include "Parser.hpp"

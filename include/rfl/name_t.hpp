@@ -1,7 +1,10 @@
+
 #ifndef RFL_NAME_T_HPP_
 #define RFL_NAME_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 namespace rfl {
 

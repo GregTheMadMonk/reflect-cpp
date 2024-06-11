@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_NT_TO_PTR_NAMED_TUPLE_HPP_
 #define RFL_INTERNAL_NT_TO_PTR_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
+#endif
 
 #include "../Field.hpp"
 #include "../make_named_tuple.hpp"

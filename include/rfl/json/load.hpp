@@ -1,7 +1,9 @@
 #ifndef RFL_JSON_LOAD_HPP_
 #define RFL_JSON_LOAD_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include "../Result.hpp"
+#endif
 #include "../io/load_string.hpp"
 #include "read.hpp"
 

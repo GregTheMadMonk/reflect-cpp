@@ -1,8 +1,11 @@
+
 #ifndef RFL_MOVE_FROM_NAMED_TUPLE_HPP_
 #define RFL_MOVE_FROM_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <type_traits>
+#endif
 
 #include "is_field.hpp"
 #include "is_named_tuple.hpp"

@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_MEMOIZATION_HPP_
 #define RFL_INTERNAL_MEMOIZATION_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <atomic>
 #include <mutex>
+#endif
 
 namespace rfl {
 namespace internal {

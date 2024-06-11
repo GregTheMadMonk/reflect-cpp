@@ -1,7 +1,10 @@
+
 #ifndef RFL_TYPE_NAME_T_HPP_
 #define RFL_TYPE_NAME_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "Literal.hpp"
 #include "internal/get_type_name.hpp"

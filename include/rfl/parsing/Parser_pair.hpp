@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_PARSER_PAIR_HPP_
 #define RFL_PARSING_PARSER_PAIR_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../Ref.hpp"
 #include "../Result.hpp"

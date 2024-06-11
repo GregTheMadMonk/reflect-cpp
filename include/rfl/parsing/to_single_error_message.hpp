@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_TOSINGLEERRORMESSAGE_HPP_
 #define RFL_PARSING_TOSINGLEERRORMESSAGE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <optional>
 #include <string>
 #include <vector>
+#endif
 
 #include "../internal/strings/replace_all.hpp"
 

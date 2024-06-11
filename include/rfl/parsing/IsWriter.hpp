@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_ISWRITER_HPP_
 #define RFL_PARSING_ISWRITER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <concepts>
 #include <string>
 #include <string_view>
+#endif
 
 #include "../Result.hpp"
 

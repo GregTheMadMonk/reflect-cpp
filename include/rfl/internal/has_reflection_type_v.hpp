@@ -1,8 +1,11 @@
+
 #ifndef RFL_HASREFLECTIONTYPEV_HPP_
 #define RFL_HASREFLECTIONTYPEV_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <utility>
+#endif
 
 namespace rfl {
 namespace internal {

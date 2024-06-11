@@ -1,11 +1,14 @@
+
 #ifndef RFL_INTERNAL_BIND_FAKE_OBJECT_TO_TUPLE_HPP_
 #define RFL_INTERNAL_BIND_FAKE_OBJECT_TO_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cstddef>
 #include <iostream>
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../always_false.hpp"
 #include "get_fake_object.hpp"

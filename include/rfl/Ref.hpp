@@ -1,8 +1,11 @@
+
 #ifndef RFL_REF_HPP_
 #define RFL_REF_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <memory>
 #include <stdexcept>
+#endif
 
 #include "Result.hpp"
 
@@ -145,4 +148,3 @@ inline void swap(rfl::Ref<T>& _r1, rfl::Ref<T>& _r2) {
 }  // namespace std
 
 #endif  // RFL_REF_HPP_
-

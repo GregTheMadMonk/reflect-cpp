@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_REMOVEFIELDS_HPP_
 #define RFL_INTERNAL_REMOVEFIELDS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "../NamedTuple.hpp"
 #include "../define_named_tuple.hpp"

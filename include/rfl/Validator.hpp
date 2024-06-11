@@ -1,6 +1,8 @@
+
 #ifndef RFL_VALIDATOR_HPP_
 #define RFL_VALIDATOR_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <concepts>
 #include <functional>
 #include <optional>
@@ -8,6 +10,7 @@
 #include <string>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "AllOf.hpp"
 #include "Result.hpp"

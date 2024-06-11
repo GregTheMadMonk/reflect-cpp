@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_IS_FORWARD_LIST_HPP_
 #define RFL_PARSING_IS_FORWARD_LIST_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <forward_list>
 #include <type_traits>
+#endif
 
 namespace rfl {
 namespace parsing {

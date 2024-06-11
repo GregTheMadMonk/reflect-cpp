@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_PARENT_HPP_
 #define RFL_PARSING_PARENT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
 #include <string_view>
 #include <type_traits>
+#endif
 
 #include "../always_false.hpp"
 #include "supports_attributes.hpp"

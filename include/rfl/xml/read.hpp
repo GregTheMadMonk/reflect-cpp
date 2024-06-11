@@ -1,9 +1,12 @@
+
 #ifndef RFL_XML_READ_HPP_
 #define RFL_XML_READ_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <istream>
 #include <pugixml.hpp>
 #include <string>
+#endif
 
 #include "../Processors.hpp"
 #include "../internal/get_type_name.hpp"

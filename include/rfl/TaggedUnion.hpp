@@ -1,7 +1,10 @@
+
 #ifndef RFL_TAGGEDUNION_HPP_
 #define RFL_TAGGEDUNION_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <variant>
+#endif
 
 #include "define_literal.hpp"
 #include "internal/Getter.hpp"

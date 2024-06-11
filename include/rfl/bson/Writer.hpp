@@ -1,8 +1,10 @@
+
 #ifndef RFL_BSON_WRITER_HPP_
 #define RFL_BSON_WRITER_HPP_
 
 #include <bson/bson.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <sstream>
@@ -12,6 +14,7 @@
 #include <type_traits>
 #include <variant>
 #include <vector>
+#endif
 
 #include "../Box.hpp"
 #include "../Ref.hpp"

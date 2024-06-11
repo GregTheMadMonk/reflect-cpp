@@ -1,11 +1,14 @@
+
 #ifndef RFL_PARSING_FIELD_VARIANT_PARSER_HPP_
 #define RFL_PARSING_FIELD_VARIANT_PARSER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <stdexcept>
 #include <string>
 #include <type_traits>
 #include <variant>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

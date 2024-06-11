@@ -1,8 +1,12 @@
+
 #ifndef RFL_CBOR_WRITER_HPP_
 #define RFL_CBOR_WRITER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cbor.h>
+#endif
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <sstream>
@@ -12,6 +16,7 @@
 #include <type_traits>
 #include <variant>
 #include <vector>
+#endif
 
 #include "../Box.hpp"
 #include "../Ref.hpp"

@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_FLATTENED_TUPLE_T_HPP_
 #define RFL_INTERNAL_FLATTENED_TUPLE_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "flattened_ptr_tuple_t.hpp"
 #include "remove_ptrs_tup.hpp"

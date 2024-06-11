@@ -1,7 +1,10 @@
+
 #ifndef RFL_REPLACE_HPP_
 #define RFL_REPLACE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "from_named_tuple.hpp"
 

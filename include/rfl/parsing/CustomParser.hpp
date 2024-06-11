@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_CUSTOMPARSER_HPP_
 #define RFL_PARSING_CUSTOMPARSER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <tuple>
+#endif
 
 #include "../internal/has_to_class_method_v.hpp"
 #include "../internal/to_ptr_field_tuple.hpp"

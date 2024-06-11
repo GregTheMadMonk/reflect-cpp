@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_SAVE_HPP_
 #define RFL_JSON_SAVE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <yyjson.h>
 #else
@@ -12,6 +14,7 @@
 #include <string>
 
 #include "../Result.hpp"
+#endif
 #include "../io/save_string.hpp"
 #include "write.hpp"
 

@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_MOVE_TO_FIELD_TUPLE_HPP_
 #define RFL_INTERNAL_MOVE_TO_FIELD_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "../field_names_t.hpp"
 #include "Array.hpp"

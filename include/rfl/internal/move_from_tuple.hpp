@@ -1,8 +1,11 @@
+
 #ifndef RFL_MOVE_FROM_TUPLE_HPP_
 #define RFL_MOVE_FROM_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <type_traits>
+#endif
 
 #include "Array.hpp"
 #include "is_flatten_field.hpp"

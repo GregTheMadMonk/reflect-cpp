@@ -1,10 +1,13 @@
+
 #ifndef RFL_PARSING_TUPLEREADER_HPP_
 #define RFL_PARSING_TUPLEREADER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string_view>
 #include <tuple>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../internal/is_array.hpp"

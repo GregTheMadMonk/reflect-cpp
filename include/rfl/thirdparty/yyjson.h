@@ -1,3 +1,4 @@
+
 /*==============================================================================
  * Created by Yaoyuan on 2019/3/9.
  * Copyright (C) 2019 Yaoyuan <ibireme@gmail.com>.
@@ -17,12 +18,14 @@
  * Header Files
  *============================================================================*/
 
+#ifndef REFLECTCPP_MODULE
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <limits.h>
 #include <string.h>
 #include <float.h>
+#endif
 
 
 

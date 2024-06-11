@@ -1,6 +1,8 @@
+
 #ifndef RFL_RESULT_HPP_
 #define RFL_RESULT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <iostream>
 #include <optional>
@@ -12,6 +14,7 @@
 #include <type_traits>
 #include <variant>
 #include <vector>
+#endif
 
 #include "internal/is_array.hpp"
 #include "internal/to_std_array.hpp"

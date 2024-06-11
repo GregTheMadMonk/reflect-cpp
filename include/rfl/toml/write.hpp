@@ -1,9 +1,12 @@
+
 #ifndef RFL_TOML_WRITE_HPP_
 #define RFL_TOML_WRITE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <ostream>
 #include <sstream>
 #include <string>
+#endif
 #include <toml++/toml.hpp>
 #include <type_traits>
 

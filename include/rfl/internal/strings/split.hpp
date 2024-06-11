@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_STRINGS_SPLIT_HPP_
 #define RFL_INTERNAL_STRINGS_SPLIT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
 #include <vector>
+#endif
 
 namespace rfl {
 namespace internal {

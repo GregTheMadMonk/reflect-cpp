@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_ISATTRIBUTE_HPP_
 #define RFL_INTERNAL_ISATTRIBUTE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "../Attribute.hpp"
 #include "../Field.hpp"

@@ -1,9 +1,12 @@
+
 #ifndef RFL_TO_NAMED_TUPLE_HPP_
 #define RFL_TO_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <iostream>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "always_false.hpp"
 #include "internal/copy_to_field_tuple.hpp"

@@ -1,8 +1,11 @@
+
 #ifndef RFL_FIELD_NAMES_T_HPP_
 #define RFL_FIELD_NAMES_T_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <type_traits>
+#endif
 
 #include "internal/get_field_names.hpp"
 

@@ -1,10 +1,13 @@
+
 #ifndef RFL_PARSING_PARSER_STRING_VIEW_HPP_
 #define RFL_PARSING_PARSER_STRING_VIEW_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <string>
 #include <string_view>
 #include <type_traits>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

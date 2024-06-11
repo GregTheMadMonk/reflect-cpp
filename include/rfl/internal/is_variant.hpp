@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_ISVARIANT_HPP_
 #define RFL_INTERNAL_ISVARIANT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
 #include <variant>
+#endif
 
 namespace rfl {
 namespace internal {

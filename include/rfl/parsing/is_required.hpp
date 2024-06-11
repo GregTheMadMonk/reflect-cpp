@@ -1,9 +1,12 @@
+
 #ifndef RFL_PARSING_IS_REQUIRED_HPP_
 #define RFL_PARSING_IS_REQUIRED_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <memory>
 #include <optional>
 #include <type_traits>
+#endif
 
 #include "../Rename.hpp"
 #include "../internal/StringLiteral.hpp"

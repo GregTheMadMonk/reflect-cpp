@@ -1,6 +1,8 @@
+
 #ifndef RFL_JSON_READER_HPP_
 #define RFL_JSON_READER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #ifdef REFLECTCPP_NO_BUNDLED_DEPENDENCIES
 #include <yyjson.h>
 #else
@@ -22,6 +24,7 @@
 
 #include "../Result.hpp"
 #include "../always_false.hpp"
+#endif
 
 namespace rfl {
 namespace json {

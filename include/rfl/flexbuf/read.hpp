@@ -1,10 +1,13 @@
+
 #ifndef FLEXBUF_READ_HPP_
 #define FLEXBUF_READ_HPP_
 
 #include <flatbuffers/flexbuffers.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <istream>
 #include <vector>
+#endif
 
 #include "../Processors.hpp"
 #include "../Result.hpp"

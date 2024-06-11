@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_ISBASICTYPE_HPP_
 #define RFL_INTERNAL_ISBASICTYPE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
 #include <type_traits>
+#endif
 
 namespace rfl {
 namespace internal {

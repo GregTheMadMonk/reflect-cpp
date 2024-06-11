@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_WRAP_IN_RFL_ARRAY_T_
 #define RFL_INTERNAL_WRAP_IN_RFL_ARRAY_T_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "Array.hpp"
 

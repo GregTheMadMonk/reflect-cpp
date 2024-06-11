@@ -1,7 +1,10 @@
+
 #ifndef RFL_COMPARISONS_HPP_
 #define RFL_COMPARISONS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "Result.hpp"
 #include "parsing/schema/ValidationType.hpp"

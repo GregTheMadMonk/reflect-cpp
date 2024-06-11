@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_ISTAGGEDUNIONWRAPPER_HPP_
 #define RFL_PARSING_ISTAGGEDUNIONWRAPPER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../internal/StringLiteral.hpp"
 #include "TaggedUnionWrapper.hpp"

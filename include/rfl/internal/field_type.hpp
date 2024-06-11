@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_FIELD_TYPE_HPP_
 #define RFL_INTERNAL_FIELD_TYPE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
 #include <variant>
+#endif
 
 #include "../NamedTuple.hpp"
 #include "../TaggedUnion.hpp"

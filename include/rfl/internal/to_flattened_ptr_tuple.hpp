@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_TO_FLATTENED_PTR_TUPLE_HPP_
 #define RFL_INTERNAL_TO_FLATTENED_PTR_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
+#endif
 
 #include "has_flatten_fields.hpp"
 #include "is_flatten_field.hpp"

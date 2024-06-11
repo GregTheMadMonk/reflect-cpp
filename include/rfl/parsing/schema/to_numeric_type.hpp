@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_SCHEMA_TONUMERICTYPE_HPP_
 #define RFL_PARSING_SCHEMA_TONUMERICTYPE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../../always_false.hpp"
 #include "Type.hpp"

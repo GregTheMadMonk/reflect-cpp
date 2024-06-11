@@ -1,12 +1,15 @@
+
 #ifndef RFL_PARSING_NAMEDTUPLEPARSER_HPP_
 #define RFL_PARSING_NAMEDTUPLEPARSER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <map>
 #include <tuple>
 #include <type_traits>
 #include <unordered_map>
 #include <utility>
+#endif
 
 #include "../NamedTuple.hpp"
 #include "../Result.hpp"

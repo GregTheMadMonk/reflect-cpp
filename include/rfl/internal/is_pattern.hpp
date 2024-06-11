@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_ISPATTERN_HPP_
 #define RFL_INTERNAL_ISPATTERN_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../Pattern.hpp"
 #include "StringLiteral.hpp"

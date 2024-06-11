@@ -1,8 +1,11 @@
+
 #ifndef RFL_BOX_HPP_
 #define RFL_BOX_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <memory>
 #include <stdexcept>
+#endif
 
 #include "Result.hpp"
 

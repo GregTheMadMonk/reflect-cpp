@@ -1,7 +1,9 @@
 #ifndef RFL_JSON_HPP_
 #define RFL_JSON_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include "../rfl.hpp"
+#endif
 #include "json/Parser.hpp"
 #include "json/Reader.hpp"
 #include "json/Writer.hpp"

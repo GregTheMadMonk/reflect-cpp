@@ -1,7 +1,10 @@
+
 #ifndef RFL_ADDSTRUCTNAME_HPP_
 #define RFL_ADDSTRUCTNAME_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
+#endif
 
 #include "Field.hpp"
 #include "Literal.hpp"

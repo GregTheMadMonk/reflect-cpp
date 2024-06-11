@@ -1,7 +1,10 @@
+
 #ifndef RFL_DEFINEVARIANT_HPP_
 #define RFL_DEFINEVARIANT_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <variant>
+#endif
 
 #include "internal/define_variant.hpp"
 

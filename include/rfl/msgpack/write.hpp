@@ -1,13 +1,18 @@
+
 #ifndef RFL_MSGPACK_WRITE_HPP_
 #define RFL_MSGPACK_WRITE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <msgpack.h>
+#endif
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <ostream>
 #include <sstream>
 #include <string>
 #include <utility>
+#endif
 
 #include "../Processors.hpp"
 #include "../parsing/Parent.hpp"

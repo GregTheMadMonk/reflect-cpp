@@ -1,8 +1,10 @@
+
 #ifndef FLEXBUF_WRITER_HPP_
 #define FLEXBUF_WRITER_HPP_
 
 #include <flatbuffers/flexbuffers.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <functional>
 #include <map>
@@ -13,6 +15,7 @@
 #include <string_view>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Ref.hpp"
 #include "../Result.hpp"

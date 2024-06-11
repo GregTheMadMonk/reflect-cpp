@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_SCHEMA_MAKE_HPP_
 #define RFL_PARSING_SCHEMA_MAKE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
+#endif
 
 #include "../Parser.hpp"
 #include "Definition.hpp"

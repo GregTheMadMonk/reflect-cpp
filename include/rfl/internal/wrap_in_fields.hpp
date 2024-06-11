@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_WRAP_IN_FIELDS_HPP_
 #define RFL_INTERNAL_WRAP_IN_FIELDS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "flattened_ptr_tuple_t.hpp"
 #include "is_flatten_field.hpp"

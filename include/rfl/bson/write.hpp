@@ -1,12 +1,15 @@
+
 #ifndef RFL_BSON_WRITE_HPP_
 #define RFL_BSON_WRITE_HPP_
 
 #include <bson/bson.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <ostream>
 #include <sstream>
 #include <string>
 #include <utility>
+#endif
 
 #include "../Processors.hpp"
 #include "../parsing/Parent.hpp"

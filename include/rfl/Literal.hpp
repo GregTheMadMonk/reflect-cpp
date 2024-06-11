@@ -1,6 +1,8 @@
+
 #ifndef RFL_LITERAL_HPP_
 #define RFL_LITERAL_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <cstdint>
 #include <functional>
 #include <limits>
@@ -8,6 +10,7 @@
 #include <string>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "Result.hpp"
 #include "internal/StringLiteral.hpp"

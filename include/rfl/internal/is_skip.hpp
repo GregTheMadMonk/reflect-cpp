@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_ISSKIP_HPP_
 #define RFL_INTERNAL_ISSKIP_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "Skip.hpp"
 

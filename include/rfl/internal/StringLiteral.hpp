@@ -1,10 +1,13 @@
+
 #ifndef RFL_INTERNAL_STRINGLITERAL_HPP_
 #define RFL_INTERNAL_STRINGLITERAL_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <array>
 #include <string>
 #include <string_view>
+#endif
 
 namespace rfl {
 namespace internal {

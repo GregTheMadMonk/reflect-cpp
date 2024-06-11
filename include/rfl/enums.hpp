@@ -1,7 +1,10 @@
+
 #ifndef RFL_ENUMS_HPP_
 #define RFL_ENUMS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
+#endif
 
 #include "Result.hpp"
 #include "internal/enums/StringConverter.hpp"

@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_COPY_FLATTENED_TUPLE_TO_NAMED_TUPLE_HPP_
 #define RFL_INTERNAL_COPY_FLATTENED_TUPLE_TO_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <functional>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "../Field.hpp"
 #include "lit_name.hpp"

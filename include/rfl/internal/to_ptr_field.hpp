@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_TOPTRFIELD_HPP_
 #define RFL_INTERNAL_TOPTRFIELD_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../Field.hpp"
 #include "../Flatten.hpp"

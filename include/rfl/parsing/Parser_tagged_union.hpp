@@ -1,8 +1,11 @@
+
 #ifndef RFL_PARSING_PARSER_TAGGED_UNION_HPP_
 #define RFL_PARSING_PARSER_TAGGED_UNION_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
 #include <type_traits>
+#endif
 
 #include "../Result.hpp"
 #include "../TaggedUnion.hpp"

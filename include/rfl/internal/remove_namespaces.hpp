@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_REMOVE_NAMESPACES_HPP_
 #define RFL_INTERNAL_REMOVE_NAMESPACES_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <source_location>
 #include <string_view>
 #include <utility>
+#endif
 
 #include "StringLiteral.hpp"
 

@@ -1,11 +1,14 @@
+
 #ifndef RFL_RENAME_HPP_
 #define RFL_RENAME_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <string_view>
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif
 
 #include "Literal.hpp"
 #include "default.hpp"

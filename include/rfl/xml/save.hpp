@@ -1,6 +1,8 @@
+
 #ifndef RFL_XML_SAVE_HPP_
 #define RFL_XML_SAVE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -8,6 +10,7 @@
 #include "../Result.hpp"
 #include "../internal/StringLiteral.hpp"
 #include "../io/save_string.hpp"
+#endif
 #include "write.hpp"
 
 namespace rfl {

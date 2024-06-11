@@ -1,8 +1,10 @@
+
 #ifndef FLEXBUF_READER_HPP_
 #define FLEXBUF_READER_HPP_
 
 #include <flatbuffers/flexbuffers.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <exception>
 #include <map>
 #include <sstream>
@@ -11,6 +13,7 @@
 #include <string_view>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Result.hpp"
 #include "../always_false.hpp"

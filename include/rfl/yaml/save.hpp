@@ -1,9 +1,12 @@
+
 #ifndef RFL_YAML_SAVE_HPP_
 #define RFL_YAML_SAVE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <fstream>
 #include <iostream>
 #include <string>
+#endif
 
 #include "../Processors.hpp"
 #include "../Result.hpp"

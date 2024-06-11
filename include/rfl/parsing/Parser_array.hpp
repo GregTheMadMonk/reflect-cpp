@@ -1,10 +1,13 @@
+
 #ifndef RFL_PARSING_PARSER_ARRAY_HPP_
 #define RFL_PARSING_PARSER_ARRAY_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <map>
 #include <type_traits>
 #include <vector>
+#endif
 
 #include "../Ref.hpp"
 #include "../Result.hpp"

@@ -1,7 +1,10 @@
+
 #ifndef RFL_SIZE_HPP_
 #define RFL_SIZE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <map>
+#endif
 
 #include "Ref.hpp"
 #include "Result.hpp"

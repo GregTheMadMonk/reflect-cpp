@@ -1,11 +1,14 @@
+
 #ifndef RFL_XML_WRITE_HPP_
 #define RFL_XML_WRITE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <ostream>
 #include <pugixml.hpp>
 #include <sstream>
 #include <string>
 #include <type_traits>
+#endif
 
 #include "../Processors.hpp"
 #include "../internal/StringLiteral.hpp"

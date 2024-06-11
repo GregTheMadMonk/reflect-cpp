@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_GETMETAFIELDS_HPP_
 #define RFL_INTERNAL_GETMETAFIELDS_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <array>
 #include <tuple>
 #include <utility>
+#endif
 
 #include "../MetaField.hpp"
 #include "../type_name_t.hpp"

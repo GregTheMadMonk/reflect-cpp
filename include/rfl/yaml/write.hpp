@@ -1,12 +1,15 @@
+
 #ifndef RFL_YAML_WRITE_HPP_
 #define RFL_YAML_WRITE_HPP_
 
 #include <yaml-cpp/yaml.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <ostream>
 #include <sstream>
 #include <string>
 #include <type_traits>
+#endif
 
 #include "../Processors.hpp"
 #include "../parsing/Parent.hpp"

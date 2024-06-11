@@ -1,7 +1,10 @@
+
 #ifndef RFL_INTERNAL_ISVALIDATOR_HPP_
 #define RFL_INTERNAL_ISVALIDATOR_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "../Validator.hpp"
 #include "StringLiteral.hpp"

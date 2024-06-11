@@ -1,7 +1,10 @@
+
 #ifndef RFL_MAKENAMEDTUPLE_HPP_
 #define RFL_MAKENAMEDTUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <type_traits>
+#endif
 
 #include "NamedTuple.hpp"
 

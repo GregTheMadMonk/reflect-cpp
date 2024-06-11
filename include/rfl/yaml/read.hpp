@@ -1,10 +1,13 @@
+
 #ifndef RFL_YAML_READ_HPP_
 #define RFL_YAML_READ_HPP_
 
 #include <yaml-cpp/yaml.h>
 
+#ifndef REFLECTCPP_MODULE
 #include <istream>
 #include <string>
+#endif
 
 #include "../Processors.hpp"
 #include "../internal/wrap_in_rfl_array_t.hpp"

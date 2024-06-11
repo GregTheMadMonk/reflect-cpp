@@ -1,9 +1,12 @@
+
 #ifndef RFL_INTERNAL_TO_PTR_FIELD_TUPLE_HPP_
 #define RFL_INTERNAL_TO_PTR_FIELD_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <iostream>
 #include <tuple>
 #include <type_traits>
+#endif
 
 #include "../field_names_t.hpp"
 #include "bind_to_tuple.hpp"

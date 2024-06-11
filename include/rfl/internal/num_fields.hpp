@@ -1,3 +1,4 @@
+
 #ifndef RFL_INTERNAL_NUM_FIELDS_HPP_
 #define RFL_INTERNAL_NUM_FIELDS_HPP_
 
@@ -29,10 +30,12 @@ the potential array as we can without missing variables in subsequent fields.
 This is the purpose of get_nested_array_size().
 */
 
+#ifndef REFLECTCPP_MODULE
 #include <algorithm>
 #include <cstddef>
 #include <type_traits>
 #include <utility>
+#endif
 
 #if __GNUC__
 #ifndef __clang__

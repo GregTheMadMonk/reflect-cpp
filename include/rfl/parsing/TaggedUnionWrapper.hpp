@@ -1,7 +1,10 @@
+
 #ifndef RFL_PARSING_TAGGEDUNIONWRAPPER_HPP_
 #define RFL_PARSING_TAGGEDUNIONWRAPPER_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <string>
+#endif
 
 #include "../Flatten.hpp"
 #include "../Rename.hpp"

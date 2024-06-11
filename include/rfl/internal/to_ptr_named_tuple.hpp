@@ -1,8 +1,11 @@
+
 #ifndef RFL_INTERNAL_TO_PTR_NAMED_TUPLE_HPP_
 #define RFL_INTERNAL_TO_PTR_NAMED_TUPLE_HPP_
 
+#ifndef REFLECTCPP_MODULE
 #include <iostream>
 #include <tuple>
+#endif
 
 #include "../always_false.hpp"
 #include "../field_names_t.hpp"
